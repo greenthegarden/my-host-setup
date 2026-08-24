@@ -41,6 +41,8 @@ git config --list
 - [pi.dev](https://pi.dev/): Agent harness
 - [herdr](https://herdr.dev/): Agent runtime
 
+See https://github.com/alebcay/awesome-shell and https://github.com/agarrharr/awesome-cli-apps.
+
 ## Generating SSH keys
 
 Generate a key using
@@ -65,3 +67,10 @@ Host github.com
 	PreferredAuthentications publickey
 	IdentityFile ~/.ssh/id_ed25519_github
 ```
+
+## Packeage Replacements
+
+| Command | Replacement |
+| ------- | ----------- |
+| du      | duf         |
+| cat/bat
