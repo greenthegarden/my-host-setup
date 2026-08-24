@@ -40,3 +40,28 @@ git config --list
 - [uv](https://docs.astral.sh/uv/getting-started/installation/): Python and dependency management
 - [pi.dev](https://pi.dev/): Agent harness
 - [herdr](https://herdr.dev/): Agent runtime
+
+## Generating SSH keys
+
+Generate a key using
+
+```sh
+ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519_<use> -C "origin and where key is used"
+```
+
+Add to `~/.ssh/config`.
+
+### SSH for Github
+
+```sh
+ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519_github -C "user@host"
+```
+
+Add following to `~/.ssh/config`,
+
+```bash
+Host github.com
+	Hostname github.com
+	PreferredAuthentications publickey
+	IdentityFile ~/.ssh/id_ed25519_github
+```
