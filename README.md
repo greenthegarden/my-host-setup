@@ -36,10 +36,10 @@ git config --list
 
 ## Additional Tools
 
-- [autin](https://atuin.sh/): Shell history
+- [atuin](https://atuin.sh/): Shell history
 - [fastfetch](https://github.com/fastfetch-cli/fastfetch): System information
 - [dust](https://github.com/bootandy/dust): Manage disk space
-- [tealdeer](): 
+- [tealdeer](https://github.com/tealdeer-rs/tealdeer): Simplified, example based and community-driven man pages
 - [uv](https://docs.astral.sh/uv/getting-started/installation/): Python and dependency management
 - [pi.dev](https://pi.dev/): Agent harness
 - [herdr](https://herdr.dev/): Agent runtime
@@ -81,6 +81,6 @@ Host github.com
 | grep    | ripgrep     |
 | ls      | eza         |
 | ls      | yazi        |
-| man     | tldr        |
+| man     | tldr (runs tealdeer)        |
 | top     | btop        |
 
