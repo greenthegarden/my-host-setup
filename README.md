@@ -81,6 +81,6 @@ Host github.com
 | grep    | ripgrep     |
 | ls      | eza         |
 | ls      | yazi        |
-| man     | tealdeer    |
+| man     | tldr        |
 | top     | btop        |
 
