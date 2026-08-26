@@ -42,6 +42,7 @@ git config --list
 - [jq](https://github.com/jqlang/jq): JSON processor
 - [pass](https://www.passwordstore.org/): Password management
 - [stow](https://github.com/codeitlikemiley/stow): Dotfile management
+- [chezmoi](https://www.chezmoi.io/): Dotfile management
 - [tealdeer](https://github.com/tealdeer-rs/tealdeer): Simplified, example based and community-driven man pages
 - [uv](https://docs.astral.sh/uv/getting-started/installation/): Python and dependency management
 - [pi.dev](https://pi.dev/): Agent harness
