@@ -39,6 +39,9 @@ git config --list
 - [atuin](https://atuin.sh/): Shell history
 - [fastfetch](https://github.com/fastfetch-cli/fastfetch): System information
 - [dust](https://github.com/bootandy/dust): Manage disk space
+- [jq](https://github.com/jqlang/jq): JSON processor
+- [pass](https://www.passwordstore.org/): Password management
+- [stow](https://github.com/codeitlikemiley/stow): Dotfile management
 - [tealdeer](https://github.com/tealdeer-rs/tealdeer): Simplified, example based and community-driven man pages
 - [uv](https://docs.astral.sh/uv/getting-started/installation/): Python and dependency management
 - [pi.dev](https://pi.dev/): Agent harness
@@ -75,12 +78,12 @@ Host github.com
 
 | Command | Replacement |
 | ------- | ----------- |
-| du      | duf         |
 | cat     | bat         |
+| cd      | zoxide      |
+| du      | duf         |
 | find    | fd          |
-| grep    | ripgrep     |
+| grep    | rg          |
 | ls      | eza         |
 | ls      | yazi        |
 | man     | tldr (runs tealdeer)        |
 | top     | btop        |
-
