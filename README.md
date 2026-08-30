@@ -2,10 +2,6 @@
 
 Guide to follow to set up consistent systems.
 
-## Based Configuration
-
-Use https://github.com/radleylewis/zsh as a base
-
 ### Fonts
 
 Install nerd font using
@@ -16,6 +12,52 @@ wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/do
 && unzip FiraMono.zip \
 && rm FiraMono.zip \
 && fc-cache -fv
+```
+
+## Base Configuration
+
+Use https://github.com/radleylewis/zsh as a base
+
+## Packeage Replacements
+
+```bash
+apt install -y bat btop duf eza fd-find fzf gdu gping nala ripgrep zoxide 
+```
+
+| Command | Replacement |
+| ------- | ----------- |
+| apt     | nala        |
+| cat     | bat (batcat) |
+| cd      | zoxide      |
+| du      | duf         |
+| du      | gdu         |
+| find    | fd          |
+| find    | fzf         |
+| ping    | gping       |
+| grep    | rg (ripgreg) |
+| ls      | eza         |
+| ls      | yazi        |
+| man     | tldr (runs tealdeer)        |
+| top     | btop        |
+
+## Additional Tools
+
+- [atuin](https://atuin.sh/): Shell history
+- [fastfetch](https://github.com/fastfetch-cli/fastfetch): System information
+- [dust](https://github.com/bootandy/dust): Manage disk space
+- [jq](https://github.com/jqlang/jq): JSON processor
+- [pass](https://www.passwordstore.org/): Password management
+- [stow](https://github.com/codeitlikemiley/stow): Dotfile management
+- [chezmoi](https://www.chezmoi.io/): Dotfile management
+- [tealdeer](https://github.com/tealdeer-rs/tealdeer): Simplified, example based and community-driven man pages
+- [uv](https://docs.astral.sh/uv/getting-started/installation/): Python and dependency management
+- [pi.dev](https://pi.dev/): Agent harness
+- [herdr](https://herdr.dev/): Agent runtime
+
+See https://github.com/alebcay/awesome-shell and https://github.com/agarrharr/awesome-cli-apps.
+
+```bash
+apt install -y jq
 ```
 
 ## Configuring Git
@@ -34,21 +76,6 @@ Check settings using
 git config --list
 ```
 
-## Additional Tools
-
-- [atuin](https://atuin.sh/): Shell history
-- [fastfetch](https://github.com/fastfetch-cli/fastfetch): System information
-- [dust](https://github.com/bootandy/dust): Manage disk space
-- [jq](https://github.com/jqlang/jq): JSON processor
-- [pass](https://www.passwordstore.org/): Password management
-- [stow](https://github.com/codeitlikemiley/stow): Dotfile management
-- [chezmoi](https://www.chezmoi.io/): Dotfile management
-- [tealdeer](https://github.com/tealdeer-rs/tealdeer): Simplified, example based and community-driven man pages
-- [uv](https://docs.astral.sh/uv/getting-started/installation/): Python and dependency management
-- [pi.dev](https://pi.dev/): Agent harness
-- [herdr](https://herdr.dev/): Agent runtime
-
-See https://github.com/alebcay/awesome-shell and https://github.com/agarrharr/awesome-cli-apps.
 
 ## Generating SSH keys
 
@@ -74,26 +101,4 @@ Host github.com
 	PreferredAuthentications publickey
 	IdentityFile ~/.ssh/id_ed25519_github
 ```
-
-## Packeage Replacements
-
-```bash
-apt isntall -y bat gdu fd-find ripgreep btop eza gping zoxiide nala duf fzf 
-```
-
-| Command | Replacement |
-| ------- | ----------- |
-| apt     | nala        |
-| cat     | bat (batcat) |
-| cd      | zoxide      |
-| du      | duf         |
-| du      | gdu         |
-| find    | fd          |
-| find    | fzf         |
-| ping    | gping       |
-| grep    | rg (ripgreg) |
-| ls      | eza         |
-| ls      | yazi        |
-| man     | tldr (runs tealdeer)        |
-| top     | btop        |
 
