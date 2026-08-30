@@ -77,14 +77,23 @@ Host github.com
 
 ## Packeage Replacements
 
+```bash
+apt isntall -y bat gdu fd-find ripgreep btop eza gping zoxiide nala duf fzf 
+```
+
 | Command | Replacement |
 | ------- | ----------- |
-| cat     | bat         |
+| apt     | nala        |
+| cat     | bat (batcat) |
 | cd      | zoxide      |
 | du      | duf         |
+| du      | gdu         |
 | find    | fd          |
-| grep    | rg          |
+| find    | fzf         |
+| ping    | gping       |
+| grep    | rg (ripgreg) |
 | ls      | eza         |
 | ls      | yazi        |
 | man     | tldr (runs tealdeer)        |
 | top     | btop        |
+
